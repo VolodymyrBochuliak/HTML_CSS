@@ -1,0 +1,181 @@
+@import url(./reset.css);
+
+@font-face {
+    font-family: "bahij-sultannahia";
+    src: url(./assets/fonts/bahij-sultannahia.ttf);
+}
+
+@font-face {
+    font-family: "ChronicaPro-Regular";
+    src: url(./assets/fonts/ChronicaPro-Regular.ttf);
+
+}
+
+body {
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.page {
+    background-color: #fff;
+    width: 100vw;
+    height: 94.5%;
+    position: absolute;
+    margin: 2% 3%;
+
+}
+
+.menu {
+    width: 30%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-left: 35%;
+}
+
+.menu a {
+    font-family: "ChronicaPro-Regular";
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 33px;
+    color: #131313;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    transition: 0.5s;
+    color: #2785F7;
+}
+
+a.nowActive {
+    color: #2785F7;
+}
+
+.main {
+    box-sizing: border-box;
+    width: 98%;
+    height: 85%;
+    background: #E5E5E5;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin: 1% auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+/* lesson style */
+
+.contentLessons {
+display: flex;
+box-sizing: border-box;
+width: 98%;
+height: 85%;
+background: #E5E5E5;
+border-radius: 30px;
+margin-left: 20px;
+margin: 0 auto;
+
+} 
+table {
+    width: 80%;
+    height: auto;
+   margin: 0 auto;
+   
+}
+td, th {
+    text-align: center;
+    width: 138px;
+    height: 40px;
+    padding-top: 30px;
+ 
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 11px;
+    transform: translateY(-0.075em);
+    content: none;
+  }
+
+.checkboxInput:checked  {
+    background-color: #2785F7;
+    content: '\2714';
+    color: #fff;
+    transition: .2s;
+}
+
+
+.cellBgImg {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.bgImg {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 11px;
+}
+
+.bgImg:hover {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    background-color: #2785F7;
+    border-radius: 11px;
+}
+
+.tableContent {
+    height: 64px;
+}
+.tableContent:hover {
+    background-color: white;
+    border-radius: 30px;
+    box-sizing: border-box;
+    height: 60px;
+    
+}
+.listHeader, .tableContent {
+    font-family: "ChronicaPro-Regular";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38.4px;
+    color: #000000;
+    font-style: normal;
+    align-content: center;
+    
+}
+
+.transitioText, .transitioTextMembers {
+    font-family: "ChronicaPro-Regular";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #B1B1B1;
+    font-style: normal;
+    
+}
+
+.boldText {
+    font-family: "ChronicaPro-Regular";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38.4px;
+    color: #000000;
+    font-style: normal;
+}

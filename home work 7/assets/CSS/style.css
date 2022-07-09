@@ -1,0 +1,329 @@
+@import url(../reset.css);
+
+body {
+    font-family: 'Kanit', sans-serif;
+    /* background-color:bisque; */
+}
+
+header {
+	width: 1440px;
+    height: 74px;
+	/* padding: 36px 0px 0px 88px; */
+    position: relative;
+    margin: 0 auto;
+    margin-top: 3%;
+    }
+    .header-position {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-position a {
+        margin-right: 641px;
+    }
+    label {
+        padding-left: 50px;
+        padding-top: 10px;
+    }
+    nav {
+        display: none;
+    }
+    .menu { 
+        width: 345px;
+        height: 340px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        margin-top: 4%;
+        margin-left: -21.5%;
+        padding-top: 25px;
+    }
+        .menu li {
+            list-style-type: none;
+            padding-top: 15px;
+            padding-left: 25px;
+        }
+        .menu a {
+            color:black;
+        }
+            #burger-menu {
+               display: none;
+            }
+            [for=burger-menu]::before {
+                content: url(../img/Group\ 4.svg);
+            }
+            #burger-menu:checked+label+nav {
+                display: block;
+            }
+            #burger-menu:checked+[for=burger-menu]::before {
+                content: url(../img/cancel-close-delete-svgrepo-com.svg);
+                
+            }
+
+        /* after hover effect */
+
+        /* .header-position nav a::after {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 345px;
+            height: 360px;
+            opacity: 1;
+            background-color: rgb(240, 215, 148);
+            
+        }
+        .header-position nav a:hover::after {
+            content: '';
+            left: 50px;
+            top: 60px;
+            transition: 2s ease;
+        } */
+
+section {
+    width: 1440px;
+    height: auto;
+    margin: 0 auto;
+}
+    .site-banner {
+        width: 100%;
+        display: flex;
+    }
+        .left-banner {
+            width: 50%;
+        }    
+        .right-banner {
+            width: 50%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+        }
+            .banner-text {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                justify-content: center;
+                padding-bottom: 50px;
+            }
+            .banner-text h2 {
+                margin-bottom: 30px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 42px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+            .banner-text p {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                color: #FFFFFF;
+                margin-bottom: 40px;
+            }
+            .banner-text button {
+                padding: 15px 57px;
+                background: transparent;
+                border: 2px solid white;
+                color: white;
+            }
+            .subtext {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                color: white;
+            }
+                .subtext p {
+                    font-family: 'Kanit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: 7px;
+                    margin-top: 5px;
+                }
+                .subtext a {
+                    text-decoration: underline;
+                    font-family: 'Kanit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-top: 0px;
+                    color:rgb(255, 255, 255);
+                                        
+                }
+    .two-sub-banners {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }   
+        .blog-item {
+            width: 39%;
+            /* width: 557px;
+            height: 368px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px 10px 0 15px ;
+        }
+h4 {
+    text-transform: uppercase;
+    margin-left: 145px;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1F1F1D;
+    /* padding-top: 26px; */
+    padding-top: 2%;
+
+}
+        .subtext-item {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .subtext-item p {
+            font-family: 'Kanit';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 6px;
+            color: #000000;
+            margin-top: 3%;
+        }
+        .subtext-item a {
+            font-family: 'Kanit';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: right;
+            text-decoration-line: underline;
+            color: #000000;
+            /* margin-top: 17px; */
+            margin-top: 4%;
+
+        }
+
+        .blog-title {
+            font-family: 'Kanit';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            color: #1F1F1D;
+        }
+        .blog-description {
+            font-family: 'Kanit';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 27px;
+            color: #1F1F1D;
+            margin-top: 0;
+        }
+.three-sub-bunners {
+    width: 75%;
+    padding-top: 26px;
+    display: flex;
+    justify-content: center;
+    padding-left: 12%;
+}
+    .three-sub-bunners .subtext-item p {
+        margin-top: 5%;
+    }
+    .three-sub-bunners .blog-title {
+        margin-top: 1%;
+    }
+    .button-solid {
+        width: 245px;
+        height: 42px;
+        margin: 2.7% 41.5%;
+        background: black;
+        color: white;
+        letter-spacing: 2px;
+    }   
+.solid-two-banners {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    scale: 0.81;
+   
+}
+.description-futures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: -50px;
+}
+
+.description-futures h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 51px;
+    color: #FFFFFF;
+ }
+
+.interviews>h4 {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.news>h4 {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.interviews>.button-solid {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+.news>.button-solid {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+footer{
+    width: 1440px;
+    height: 142px;
+    margin: 0 auto;
+    background-color:black;
+
+}
+    .footer-iner {
+       width: 100%;
+       height: 100%;
+        /* background-color:black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        margin-top: 100px;
+
+    }
+        .footer-iner h5 {
+            font-family: 'Kanit';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 5px;
+        }
+
+@media screen and (max-width:767px) {
+
+}

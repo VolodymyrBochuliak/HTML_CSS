@@ -1,0 +1,687 @@
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+/* menu */
+
+header {
+    width: 486px;
+    height: 44px;
+    margin: 54px auto 32px auto;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    font-size: 24px;
+    text-decoration: none;
+    line-height: 33px;
+    color: #131313;
+}
+
+li a:hover {
+    transition: .2s linear;
+    color: #2785F7;
+}
+
+#active {
+    color: #2785F7;
+}
+
+.active-menu {
+    background-color: #2785F7;
+    border-radius: 15px;
+}
+
+.active-folder {
+    content: url("../icons/folder-white.svg") !important;
+}
+
+.active-monitor {
+    content: url("../icons/monitor-white.svg") !important;
+}
+
+.active-users {
+    content: url("../icons/users-alt-white.svg") !important;
+}
+
+.active-cloud {
+    content: url("../icons/cloud-share-white.svg") !important;
+}
+
+.active-cog {
+    content: url("../icons/cog-white.svg") !important;
+}
+
+/* containers */
+
+.container {
+    width: 1404px;
+    height: 726px;
+    margin: 0 auto;
+    background: #EAEBED;
+    border-radius: 30px;
+}
+
+.main-container {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.team-container {
+    width: 1366px;
+    height: 742px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 35px;
+    grid-gap: 30px;
+}
+
+.lesson-container {
+    padding: 120px 100px;
+    margin-bottom: 50px;
+}
+
+/* side-menu */
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 85px;
+    height: 420px;
+    margin: 171px 23px 135px 30px;
+    padding: 10px 0;
+
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.block {
+    position: relative;
+    display: flex;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.block:hover {
+    background-color: #2785F7;
+}
+
+.block::after {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 80%;
+    font-size: 20px;
+    padding: 0 20px 0 10px;
+    color: #fff;
+    background-color: #2785F7;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.block:hover::after {
+    opacity: 1;
+    width: 80px;
+}
+
+.block-folder a {
+    width: 35px;
+    height: 35px;
+    content: url("../icons/folder.svg");
+}
+
+.block-folder:hover a {
+    content: url("../icons/folder-white.svg");
+}
+
+.block-folder:hover::after {
+    content: "Project";
+}
+
+.block-monitor a {
+    width: 35px;
+    height: 35px;
+    content: url("../icons/monitor.svg");
+}
+
+.block-monitor:hover a {
+    content: url("../icons/monitor-white.svg");
+}
+
+.block-monitor:hover::after {
+    content: "Account";
+}
+
+.block-users a {
+    width: 35px;
+    height: 35px;
+    content: url("../icons/users-alt.svg");
+}
+
+.block-users:hover a {
+    content: url("../icons/users-alt-white.svg");
+}
+
+.block-users:hover::after {
+    content: "Groups";
+}
+
+.block-cloud a {
+    width: 35px;
+    height: 35px;
+    content: url("../icons/cloud-share.svg");
+}
+
+.block-cloud:hover a {
+    content: url("../icons/cloud-share-white.svg");
+}
+
+.block-cloud:hover::after {
+    content: "Cloud";
+}
+
+.block-cog a {
+    width: 35px;
+    height: 35px;
+    content: url("../icons/cog.svg");
+}
+
+.block-cog:hover a {
+    content: url("../icons/cog-white.svg");
+}
+
+.block-cog:hover::after {
+    content: "Settings";
+}
+
+/* main */
+
+.main {
+    width: 1200px;
+    margin: 70px 34px 34px 30px;
+}
+
+.main-wrapper {
+    display: flex;
+}
+
+.main-first-block {
+    width: 592px;
+    height: 130px;
+    margin: 0 37px 0 0;
+
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.main-second-block {
+    width: 583px;
+    height: 130px;
+    margin: 0 0 0 37px;
+
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.main-info {
+    padding: 32px 0 32px 42px;
+}
+
+.main-title {
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #B1B1B1;
+}
+
+.main-text {
+    margin-top: 5px;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #000000;
+}
+
+/* about */
+
+.about {
+    margin-top: 34px;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-block {
+    width: 732px;
+    height: 194px;
+
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.about-info-first {
+    padding: 34px 0 34px 42px;
+}
+
+.about-second {
+    margin-top: 26px;
+}
+
+.about-title {
+    font-size: 24px;
+    line-height: 38px;
+
+    color: #000000;
+}
+
+.about-text {
+    margin-top: 7px;
+    width: 490px;
+    font-size: 18px;
+
+
+    color: #b1b1b1;
+}
+
+.about-img {
+    width: 100px;
+    height: 115px;
+}
+
+.about-item {
+    display: flex;
+    align-items: center;
+    padding: 28px 0 28px 42px;
+}
+
+.about-info {
+    margin-left: 25px;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.text-width {
+    width: 430px;
+}
+
+/* data */
+
+.about-data {
+    width: 447px;
+    height: 416px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.data-item {
+    margin: 40px 30px;
+}
+
+.data-img {
+    width: 110px;
+    height: 95px;
+}
+
+.data-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.data-text {
+    margin-top: 20px;
+}
+
+.data-width {
+    width: 300px;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+/* team */
+
+.team-item {
+    width: 300px;
+    height: 325px;
+    cursor: pointer;
+    position: relative;
+
+    text-align: center;
+    padding: 50px 20px;
+
+    background-color: #fff;
+    border-radius: 35px;
+}
+
+.team-trash {
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 10;
+    border-radius: 15px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-item:hover .team-trash {
+    display: flex;
+}
+
+.team-trash i {
+    color: #2785F7;
+    font-size: 30px;
+}
+
+.team-item:hover {
+    background-color: #2785F7;
+    transition: .2s linear
+}
+
+.team-item:hover .team-name {
+    color: #fff;
+    transition: .2s linear
+}
+
+
+.team-img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+
+}
+
+.team-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+
+.team-name {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #000;
+}
+
+.the-same {
+    font-size: 20px;
+    font-weight: 400;
+    color: #c5c5c5;
+}
+
+.team-text {
+    margin-top: 15px;
+}
+
+.team-date {
+    color: #c5c5c5;
+    margin-top: 30px;
+}
+
+/* lesson */
+
+table {
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+tbody tr:hover {
+    background-color: #fff;
+    transition: .2s linear;
+}
+
+th, td {
+    width: 220px;
+    height: 75px;
+    text-align: center;
+}
+
+tr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    padding-top: 45px;
+    border-radius: 20px;
+}
+
+td i {
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    margin-top: -10px;
+}
+
+td i:hover {
+    color: #fff;
+    background-color: #2785F7;
+    transition: .2s linear;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+}
+
+/*account*/
+
+.account-wrapper {
+    display: flex;
+    margin-top: 30px;
+}
+
+.account-block {
+    width: 568px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.account-first {
+    height: 125px;
+}
+
+.account-second {
+    height: 525px;
+}
+
+.account-first:last-child {
+    margin-bottom: 0;
+}
+
+.account-info {
+    width: 100%;
+    height: 125px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.account-info>span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 400;
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    color: #fff;
+    background-color: green;
+}
+
+.account-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 75px;
+    height: 75px;
+    background-color: #2785F7;
+}
+
+.account-img img {
+    width: 70%;
+    height: 70%;
+}
+
+.account-text {
+    margin-left: 20px;
+}
+
+.account-name {
+    color: #000;
+    font-size: 30px;
+}
+
+.account-mail {
+    display: block;
+    font-size: 15px;
+    margin-top: 5px;
+    color: #b1b1b1;
+}
+
+/*password*/
+
+.password {
+    margin: 0 0 0 30px
+}
+
+.password-form {
+    margin-top: 20px;
+}
+
+.password-text {
+    font-size: 18px;
+    color: #000;
+}
+
+.password-form input {
+    width: 95%;
+    height: 50px;
+}
+
+.tag-input {
+    font-size: 15px;
+    margin-top: 18px;
+    border: 2px solid #b1b1b1;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.tag-input::placeholder {
+    color: #b1b1b1;
+}
+
+.tag-input:focus {
+    outline: none;
+    border: 2px solid #2785F7;
+    border-radius: 15px;
+}
+
+.form-btn {
+    display: inline-block;
+    position: relative;
+    left: 72%;
+    margin: 15px 0;
+}
+
+.form-btn-info {
+    left: 77%;
+}
+
+.btn-blue {
+    font-size: 18px;
+    color: #fff;
+    background-color: #2785F7;
+    padding: 15px 40px;
+    border-radius: 15px;
+    border: 0;
+    cursor: pointer;
+}
+
+/*info*/
+
+.info-block {
+    margin: 0 30px 0 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 650px;
+    height: 670px;
+
+}
+
+.info-img {
+    background-color: orange;
+}
+
+.info-form {
+    margin: 40px 30px 10px 30px;
+}
+
+.input-name {
+    width: 100%;
+    height: 50px;
+}
+
+.input-address {
+    width: 100%;
+
+    padding-bottom: 55px;
+    display: inline-flex;
+}
+
+.wrapper-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.input-about {
+    margin-top: 0;
+}
+
+.info-company {
+    height: 100px;
+}
+
+.about-form {
+    margin: 25px 0 0 30px;
+}
+
+.about-form input {
+    width: 90%;
+    height: 50px;
+}
+

@@ -1,0 +1,330 @@
+@import url(./reset.css);
+
+@font-face {
+    font-family: "bahij-sultannahia";
+    src: url(./assets/fonts/bahij-sultannahia.ttf);
+}
+
+@font-face {
+    font-family: "ChronicaPro-Regular";
+    src: url(./assets/fonts/ChronicaPro-Regular.ttf);
+}
+
+body {
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.page {
+    background-color: #fff;
+    width: 100vw;
+    height: 94.5%;
+    position: absolute;
+    margin: 2% 3%;
+
+}
+
+.menu {
+    width: 30%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-left: 35%;
+}
+
+.menu a {
+    font-family: "ChronicaPro-Regular";
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 33px;
+    color: #131313;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    transition: 0.5s;
+    color: #2785F7;
+}
+
+a.nowActive {
+    color: #2785F7;
+}
+
+.main {
+    box-sizing: border-box;
+    width: 98%;
+    height: 85%;
+    background: #E5E5E5;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin: 1% auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+    .sideBar {
+        box-sizing: border-box;
+        border-radius: 30px;
+        background: white;
+        width: 7%;
+        height: 55%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: space-evenly;
+        padding-top: 1%;
+
+    }
+           .iconsSideBarMain {
+            width: 68%;
+            height: 15%;
+            box-sizing: border-box;
+            border-radius: 15px;
+            background: #ffffff;
+            display: flex;
+            position: relative;
+                       
+        }
+        .hoverProject::after, 
+        .hoverAccount::after,
+        .hoverGroups::after,
+        .hoverCloud::after,
+        .hoverSettings::after {
+            content: "";
+            top: 0px;
+            right: 0px;
+            opacity: 0;
+            font-size: 24px;
+            font-weight: 400;
+            font-family: "bahij-sultannahia";
+
+        }
+        
+        .iconsSideBarMain.hoverProject:hover::after {
+            content: "Project";
+            letter-spacing: 2px;
+            position: absolute;
+            right: -25px;
+            top: 50%;
+            transform: translate(50%, -50%);
+            background: #2785F7;
+            padding: 20%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            z-index: 0;
+            transition: 0.5s ease;
+            opacity: 1;
+        }
+        .iconsSideBarMain.hoverAccount:hover::after {
+            content: "Account";
+            letter-spacing: 2px;
+            position: absolute;
+            right: -25px;
+            top: 50%;
+            transform: translate(50%, -50%);
+            background: #2785F7;
+            padding: 20%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            z-index: 0;
+            transition: 0.5s ease;
+            opacity: 1;
+            
+        }
+        .iconsSideBarMain.hoverGroups:hover::after {
+            content: "Groups";
+            letter-spacing: 2px;
+            position: absolute;
+            right: -25px;
+            top: 50%;
+            transform: translate(50%, -50%);
+            background: #2785F7;
+            padding: 20%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            z-index: 0;
+            transition: 0.5s ease;
+            opacity: 1;
+            
+        }
+        .iconsSideBarMain.hoverCloud:hover::after {
+            content: "Cloud";
+            letter-spacing: 2px;
+            position: absolute;
+            right: -23px;
+            top: 50%;
+            transform: translate(50%, -50%);
+            background: #2785F7;
+            padding: 20%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            z-index: 0;
+            transition: 0.5s ease;
+            opacity: 1;
+        }
+        .iconsSideBarMain.hoverSettings:hover::after {
+            content: "Settings";
+            letter-spacing: 2px;
+            position: absolute;
+            right: -25px;
+            top: 50%;
+            transform: translate(50%, -50%);
+            background: #2785F7;
+            padding: 20%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            z-index: 0;
+            transition: 0.5s ease;
+            opacity: 1;
+        }
+
+        .iconsSideBarMain:hover {
+            background: #2785F7;
+            z-index: 0;
+        }
+        
+        .iconsSideBarMain img {
+            width: 75%;
+            height: 75%;
+            margin: 0 auto;
+            padding-top: 12%;
+            z-index: 2;
+        }  
+        .accountSide {
+            display: contents;
+        } 
+
+    .contentBase {
+        width: 85%;
+        height: 80%;
+    }
+
+        .contentTop {
+            width: 100%;
+            height: 18%;
+            display: flex;
+            justify-content: space-between;
+        }
+            .projName {
+                box-sizing: border-box;
+                border-radius: 30px;
+                background: white;
+                width: 49%;
+                height: 100%;
+                padding-left: 20px;
+                padding-top: 1%;
+            
+            }
+            .compOrg {
+                box-sizing: border-box;
+                border-radius: 30px;
+                background: white;
+                width: 49%;
+                height: 100%;
+                padding-left: 20px;
+                padding-top: 1%;
+            
+            }
+
+        .contentBottom {
+            width: 100%;
+            height: 80%;
+            margin-top: 2%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .contenBottomLeftSide {
+            width: 58%;
+            height: 100%;
+
+           } 
+            .descr {
+                box-sizing: border-box;
+                border-radius: 30px;
+                background: white;
+                width: 100%;
+                height: 46%;
+                margin-bottom: 5%;
+                padding: 5%;
+               
+            }
+            
+            .team {
+                box-sizing: border-box;
+                border-radius: 30px;
+                background: white;
+                width: 100%;
+                height: 46%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items:center;
+                
+            }
+                .teamDescription {
+                    width: 70%;
+                    height: 50%;
+                }
+
+        .dataPort {
+            box-sizing: border-box;
+            border-radius: 30px;
+            background: white;
+            height: 100%;
+            width: 39%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-evenly;
+            /* position: absolute;
+            left: 65.35%;
+            right: 3.61%;
+            top: 30.56%;
+            bottom: 15%; */
+        }
+            .dataPortDescription {
+                width: 80%;
+                height: 60%;
+                padding-left: 10%;
+
+            }
+            .dataPort .contImg {
+                padding-left: 10%;
+            }
+.contImg {
+    width: 120px;
+    height: 120px;
+}
+
+.transitioTextDataPort {
+    font-family: "ChronicaPro-Regular";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #B1B1B1;
+    font-style: normal;
+    width: 100%;
+    height: 80%;
+    
+}
+
+.boldText {
+    font-family: "ChronicaPro-Regular";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38.4px;
+    color: #000000;
+    font-style: normal;
+}
+.transitioText {
+    font-family: "ChronicaPro-Regular";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #B1B1B1;
+    font-style: normal;
+}
+    

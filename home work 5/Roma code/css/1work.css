@@ -1,0 +1,78 @@
+body {
+	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	padding: 54px 0px 32px 0px;
+}
+
+header nav {
+	width: 25%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav a {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33px;
+	color: #131313;
+	text-decoration: none;
+	transition: .5s ease;
+}
+
+header nav a:hover {
+	color: #2785F7;
+	transition: .5s ease;
+}
+
+.isActive {
+	color: #2785F7;
+}
+
+section {
+	background: #EAEBED;
+	border-radius: 41px;
+}
+
+section ul li {
+	list-style: none;
+	display: flex;
+	width: 75%;
+	margin: 0 auto;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+}
+
+
+section ul li h3,
+section ul li h2 {
+	min-width: 20%;
+}
+
+section ul li:hover:not(.list-header) {
+	background: #FFFFFF;
+	border-radius: 21px;
+	transition: .5s ease;
+}
+
+section ul li h3.checkbox {
+	background: #FFFFFF;
+	border-radius: 11px;
+	width: 35px;
+	height: 35px;
+}
+
+section ul li h3.checkbox:hover {
+	background-color: #2785F7;
+}
+
+@media screen and (max-width:991px) {
+	section ul li {
+		width: 90%;
+	}
+}

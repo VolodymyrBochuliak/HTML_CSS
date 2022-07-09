@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/account.css">
+    <!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
+    <title>Account</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="menu">
+            <a href="./index.html" class="nowActive">Main</a>
+            <a href="./team.html">Team</a>
+            <a href="./lessons.html">Lessons</a>
+        </div>
+        <div class="main">
+            <div class="sideBar">
+                <div class="iconsSideBarMain hoverProject">  
+                    <img src="./assets/img/folder.svg" alt="">
+                </div>
+                <div class="iconsSideBarMain hoverAccount">
+                    <a class="accountSide" href="account.html">
+                        <img src="./assets/img/monitor.svg" alt="">
+                    </a>
+                </div>
+                <div class="iconsSideBarMain hoverGroups">
+                    <img src="./assets/img/users-alt.svg" alt="">
+                </div>
+                <div class="iconsSideBarMain hoverCloud">
+                    <img src="./assets/img/cloud-share.svg" alt="">
+                </div>
+                <div class="iconsSideBarMain hoverSettings">
+                    <img src="./assets/img/wrench.svg" alt="">
+                </div>
+            </div>
+            <div class="contentBase">
+                <div class="accountContentLeft">
+                    <div class="accountUser">
+                        <div class="userShortInfo">
+                            <span>A</span>
+                            <div class="accountUserText">
+                                <h3 class="accountName boldText">Andy Cube</h3>
+                                <span class="accountMail ">andycube@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accountUserPass">
+                        <div class="accountInfo">
+                            <div class="accountImg">
+                                <img src="./assets/img/Lock.svg" alt="">
+                            </div>
+                            <div class="accountText">
+                                <h3 class="boldText">Change Password</h3>
+                                <span class="accountMail">
+                                    Please choose a password which is longer than 6 characters
+                                </span>
+                            </div>
+                        </div>
+                        <div class="passwordBlock">
+                            <form class="passwordForm">
+                                <span class="passwordText">Old password</span>
+                                <input class="tagInput" type="password" minlength="6" placeholder="Enter password">
+                            </form>
+                            <form class="passwordForm">
+                                <span class="passwordText">New password</span>
+                                <input class="tagInput" type="password" minlength="6" placeholder="Enter password">
+                            </form>
+                            <form class="passwordForm">
+                                <span class="passwordText">Confirm password</span>
+                                <input class="tagInput" type="password" minlength="6" placeholder="Enter password">
+                            </form>
+                            <!-- <form class="form-btn">
+                                <button class="btn-blue" type="submit">Save</button>
+                            </form> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="accountContentRight">
+                    <div class="infoCompany">
+                        <div class="accountInfo">
+                            <div class="accountImg infoImg">
+                                <img src="./assets/img/Lock.svg" alt="">
+                            </div>
+                            <div class="accountText">
+                                <h3 class="boldText">Company</h3>
+                                <span class="accountMail">Optional, but we would appreciate if you fill out these
+                                    form</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="infoForm">
+                        <span class="passwordText">Company name</span>
+                        <input class="tagInput inputName" type="text" placeholder="Logos IT-academy">
+                    </form>
+                    <form class="infoForm">
+                        <span class="passwordText">Company address</span>
+                        <input class="tagInput inputAddress" type="text" placeholder="61 I.Franka,Lviv">
+                    </form>
+                    <div class="blockForm">
+                        <form class="aboutForm">
+                            <span class="passwordText">Country</span>
+                            <input class="tagInput" type="text" placeholder="Enter country">
+                        </form>
+                        <form class="aboutForm">
+                            <span class="passwordText">City</span>
+                            <input class="tagInput input-about" type="text" placeholder="Enter city">
+                        </form>
+                        <form class="aboutForm">
+                            <span class="passwordText">State</span>
+                            <input class="tagInput input-about" type="text" placeholder="Enter state">
+                        </form>
+                        <form class="aboutForm">
+                            <span class="passwordText">Postal code</span>
+                            <input class="tagInput input-about" type="text" placeholder="Enter code">
+                        </form>
+                    </div>
+                    <!-- <form class="form-btn form-btn-info">
+                        <button class="btn-blue" type="submit">Save</button>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

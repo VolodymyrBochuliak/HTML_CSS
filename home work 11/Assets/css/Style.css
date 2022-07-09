@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:wght@500&family=Kdam+Thmor+Pro&family=Libre+Franklin:wght@400;700&family=Tiro+Gurmukhi&display=swap");
+.home {
+  background-color: #c66c49; }
+  .home .home-container {
+    background-image: url(../img/bg-img.svg);
+    background-size: cover;
+    min-height: 768px;
+    opacity: 0.8; }
+    .home .home-container .brand-position {
+      margin-left: 60px; }
+    .home .home-container .navbar {
+      padding-top: 6%; }
+    .home .home-container .nav-link-font {
+      font-family: "Libre Franklin";
+      font-size: 18px;
+      color: #fffaf2;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px;
+      margin-left: 60px; }
+    .home .home-container .inner-text h2 {
+      font-family: "Libre Franklin";
+      font-size: 64px;
+      color: #fffaf2;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 78px; }
+    .home .home-container .inner-text p {
+      font-family: "Libre Franklin";
+      font-size: 24px;
+      color: #fffaf2;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px; }
+    .home .home-container .inner-text a {
+      font-family: "Libre Franklin";
+      font-size: 18px;
+      color: #fffaf2;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px; }
+
+h3 {
+  font-family: "Libre Franklin";
+  font-size: 24px;
+  color: #333333;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 78px; }
+
+.about .container p {
+  font-family: "Libre Franklin";
+  font-size: 18px;
+  color: #333333;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; }
+
+.portofolio h4 {
+  font-family: "Libre Franklin";
+  font-size: 18px;
+  color: #333333;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 78px; }
+.portofolio p {
+  font-family: "Libre Franklin";
+  font-size: 18px;
+  color: #333333;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; }
+.portofolio .ux-inner-text {
+  width: 60%; }
+
+.get-in-inner-text a {
+  text-decoration: none;
+  font-family: "Libre Franklin";
+  font-size: 18px;
+  color: #333333;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; }
+
+@media screen and (max-width: 767px) {
+  .home-container .navbar a {
+    font-family: "Libre Franklin";
+    font-size: 24px;
+    color: #fffaf2;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 78px; }
+  .home-container .inner-text h2 {
+    font-family: "Libre Franklin";
+    font-size: 20px;
+    color: #fffaf2;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 78px; }
+  .home-container .inner-text p {
+    font-family: "Libre Franklin";
+    font-size: 13px;
+    color: #fffaf2;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; }
+  .home-container .inner-text a {
+    font-family: "Libre Franklin";
+    font-size: 13px;
+    color: #fffaf2;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; }
+
+  .about .container p {
+    font-family: "Libre Franklin";
+    font-size: 12px;
+    color: #333333;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    line-height: 15px; }
+
+  .skills-range span {
+    font-size: 12px; }
+  .skills-range dt,
+  .skills-range dd,
+  .skills-range dl {
+    padding-bottom: 0; }
+
+  .portofolio h4 {
+    font-family: "Libre Franklin";
+    font-size: 14px;
+    color: #333333;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 78px; }
+  .portofolio p {
+    font-family: "Libre Franklin";
+    font-size: 12px;
+    color: #333333;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; }
+  .portofolio .ux-inner-text {
+    width: 100% !important;
+    height: 50% !important; }
+
+  .get-in-inner-text a {
+    font-family: "Libre Franklin";
+    font-size: 14px;
+    color: #333333;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; }
+  .get-in-inner-text span {
+    font-family: "Libre Franklin";
+    font-size: 12px;
+    color: #333333;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; } }
+.range-color-1 {
+  background-color: #c66c49;
+  height: 20px; }
+
+.range-color-2 {
+  background-color: #f5d6ab; }
+
+/*# sourceMappingURL=Style.css.map */

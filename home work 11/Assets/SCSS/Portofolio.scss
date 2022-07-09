@@ -1,0 +1,192 @@
+// @import url(./colors.scss);
+
+$background-color-1: #fffaf2;
+$background-color-2: #8b4136;
+$diagram-color-1: #c66c49;
+$diagram-color-2: #f5d6ab;
+$font-color: #333333;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:wght@500&family=Kdam+Thmor+Pro&family=Libre+Franklin:wght@400;700&family=Tiro+Gurmukhi&display=swap');
+
+@mixin text-font ($size, $color) {
+    font-family: "Libre Franklin";
+    font-size: $size;
+    color: $color;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+@mixin header-font ($size, $color, $weight) {
+    font-family: "Libre Franklin";
+    font-size: $size;
+    color: $color;
+    font-style: normal;
+    font-weight: $weight;
+    line-height: 78px;
+}
+
+
+// @include header-font (25px, red, 400);
+// @include text-font (24px, $background-color-1);
+// @include text-font (64px, $background-color-1);
+// @include header-font (24px, $font-color, 700);
+
+section {
+    // width: 1440px;
+    // height: auto;
+}
+
+.home {
+    background-color: rgba(198, 108, 73, 1);
+
+    .home-container {
+        background-image: url(../img/bg-img.svg);
+        background-size: cover;
+        min-height: 768px;
+        opacity: 0.8;
+
+        .brand-position {
+            margin-left: 60px
+        }
+
+        .navbar {
+            padding-top: 6%;
+        }
+
+        .nav-link-font {
+            @include text-font (18px, $background-color-1);
+            margin-left: 60px;
+        }
+
+        .inner-text {
+            h2 {
+                @include header-font (64px, $background-color-1, 400);
+            }
+
+            p {
+                @include text-font (24px, $background-color-1);
+            }
+
+            a {
+                @include text-font (18px, $background-color-1);
+
+            }
+        }
+    }
+}
+
+h3 {
+    @include header-font (24px, $font-color, 700);
+}
+
+.about .container {
+
+    p {
+        @include text-font (18px, $font-color);
+    }
+}
+
+.portofolio {
+    h4 {
+        @include header-font (18px, $font-color, 600);
+    }
+
+    p {
+        @include text-font (18px, $font-color);
+
+    }
+
+    .ux-inner-text {
+        width: 60%
+    }
+}
+
+.get-in-inner-text {
+    a {
+        text-decoration: none;
+        @include text-font (18px, $font-color);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    .home-container {
+        .navbar {
+            a {
+                @include header-font (24px, $background-color-1, 700);
+            }
+        }
+        .inner-text {
+            h2 {
+                @include header-font (20px, $background-color-1, 400);
+            }
+            p {
+                @include text-font (13px, $background-color-1);
+            }
+            a {
+                @include text-font (13px, $background-color-1);
+            }
+        }
+    }
+
+    .about {
+        .container {
+            p {
+                @include text-font (12px, $font-color);
+                line-height: 15px;
+            }
+        }
+    }
+
+    .skills-range {
+        span {
+            font-size: 12px;
+        }
+
+        dt,
+        dd,
+        dl {
+            padding-bottom: 0;
+        }
+    }
+
+    .portofolio {
+
+        h4 {
+            @include header-font (14px, $font-color, 500);
+
+        }
+
+        p {
+            @include text-font (12px, $font-color);
+        }
+
+        .ux-inner-text {
+            width: 100% !important;
+            height: 50% !important;
+
+        }
+    }
+
+    .get-in-inner-text {
+        a {
+            @include text-font (14px, $font-color);
+            // padding-bottom: 5px;
+        }
+
+        span {
+            @include text-font (12px, $font-color);
+        }
+    }
+}
+
+
+.range-color-1 {
+    background-color: $diagram-color-1;
+    height: 20px;
+}
+
+.range-color-2 {
+    background-color: $diagram-color-2;
+}

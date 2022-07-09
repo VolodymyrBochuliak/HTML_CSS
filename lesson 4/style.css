@@ -1,0 +1,42 @@
+@import url('./reset.css');
+
+/* h1 {
+    font-size: 35px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 35px;
+    /* font-family: 'Kdam Thmor Pro', sans-serif; 
+} */
+
+/* @font-face {
+    font-family: "KdamThmorPro";
+    src: url(./fonts/KdamThmorPro-Regular.ttf);
+} */
+
+/* body {
+    margin: 15px;
+}
+
+h1 {
+    font-family: "KdamThmorPro";
+    display: none;
+    opacity: 0;
+}
+
+.gradientBg:hover h1 {
+    display: block;
+    color: blue;
+    background-color: cornflowerblue;
+    opacity: 1;
+} */
+
+.gradientBg {
+    width: 80%;
+    height: 50vh;
+    background: linear-gradient(to top, red, white);
+    /* background: linear-gradient(-45deg, red, white); */
+    background-image: url(./img/images.jfif) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}

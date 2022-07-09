@@ -1,0 +1,78 @@
+@import url('../reset.css');
+
+/* .myMove h1 {
+    position: relative;
+    font-size: 16px;
+   color: brown;
+   animation: moveHeading 7s infinite;
+}
+@keyframes moveHeading {
+    0% {
+        top: 200px;
+        left: 0%;
+    }
+    10% {
+        top: 190px;
+        left: 10%;
+    }
+    20% {
+        top: 180px;
+        left: 20%;
+        color: cyan;
+    }
+    30% {
+        top: 170px;
+        left: 30%;
+    }
+    40% {
+        top: 160px;
+        left: 40%;
+        color: darkorange;
+    }
+    50% {
+        top: 150px;
+        left: 50%;
+        font-size: 32px;
+    }
+    60% {
+        top: 140px;
+        left: 75%;
+    }
+    70% {
+        top: 130px;
+        left: 90%;
+    }
+    80% {
+        top: 120px;
+        left: 50%;
+    }
+    90% {
+        top: 110px;
+        left: 30%;
+    }
+    100% {
+        top: 100px;
+        left: 10%;
+        color: green;
+    }
+}  */
+img {
+    width: 200px;
+    height: 200px;
+    animation: clipImg 4s infinite;
+/* }
+@keyframes clipImg {
+    0% {
+        clip-path: inset(20px 20px);
+    }
+    50% {
+        clip-path: inset(40px 40px);
+    }
+    100% {
+        clip-path: inset(0px 0px);
+    }
+}
+img:hover {
+    opacity: 0;
+    transition: .5s ease; */
+}

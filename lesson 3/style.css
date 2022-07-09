@@ -1,0 +1,71 @@
+.main{
+    height: 100vh;
+    background: url(./img/karpaty.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 50vh;
+    box-sizing: border-box;
+}
+
+.main div{
+    display: block;
+    width: 45%;
+    text-align: center;
+    margin: 0 auto;
+}
+.main p{
+    color: white;
+    text-align: center;
+}
+h1{
+    margin: 0;
+    font-size: 55px;
+    color: white;
+}
+button{
+    background-color: #ffc10700;
+    color: white;
+    padding: 15px 15px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+
+
+
+/* .paragraph1{
+    box-sizing: border-box; /*прикольна штука щоб не вийти за рамки екрану 
+    background-color: orange;
+    width: 350px;
+    height: 350px;
+    border: 6px solid orangered;
+    border-radius: 15px;
+    margin: 0 auto;
+} 
+
+.paragraph1{
+    width: 100vw;
+    height: 45vw;
+   
+    background: url(./img/karpaty.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    justify-content: center;
+    display: flex;
+}
+.p1{
+    background-color: yellow;
+    width: 50%;
+    height: 20%;
+    
+}
+.p2{
+    background-color:orange;
+    width: 50%;
+    height: 20%;
+    
+}
+*/

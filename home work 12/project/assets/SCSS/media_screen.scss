@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf),
+    url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+@mixin title-font ($size, $color) {
+    font-family: 'Montserrat';
+    font-size: $size;
+    color: $color;
+    font-style: normal;
+    font-weight: 700;
+}
+@mixin subtitle-font ($size, $color) {
+    font-family: 'Roboto';
+    font-size: $size;
+    color: $color;
+    font-style: normal;
+    font-weight: 300;
+}
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    
+    section, body {
+        margin: 0 auto;
+        width: 768px;
+    }
+    .bodys {
+        width: 768px;
+    }
+    .header__body { 
+        width: 768px;
+    }
+    .header__nav {
+        width: 700px;
+        .nav__buttons {
+            padding-right: 0px;
+           
+            .nav__button {
+                &::after {
+                    visibility: visible;
+
+                }
+            }
+        }
+    }
+    .dreamshare__card {
+        width: 236px;
+    }
+    .dreamshare__card__body {
+        padding: 15px;
+    }
+    .partners {
+        .partners__block {
+            margin: 0 auto;
+            width: 492px;
+            height: 605px;
+            flex-wrap: wrap;
+        }
+        .partners__inner {
+            width: 50%;
+        }
+    }
+    .activity {
+        .activity__items {
+            width: 748px;
+            margin: 0 auto;
+        }
+        #item-1,  #item-2, #item-3,  #item-7 {
+            width: 236px;
+        }
+    }
+    .footer {
+        width: 768px;
+    }
+    .footer__body {
+        width: 90%;
+    }
+    .footer__body__content {
+        width: 310px;
+        display: flex;
+        justify-content: space-around;
+    }
+}   
+
+@media screen and (max-width: 767px) {
+
+    section, body, footer, .bodys{
+        width: 320px;
+        margin: 0 auto;
+    }
+    
+    .header__body { 
+        width: 320px;
+        height: 540px;
+        background-position: center;
+    }
+    .header__nav {
+        width: 100%;
+        height: 150px;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+        .nav__buttons {
+            padding-right: 0px;
+        }        
+    }
+
+    .header__inner {
+        margin: 0 auto;
+        width: 281px;
+        height: 234px;
+
+        .inner__title {
+            h2 {
+                width: 272px;
+                height: 74px;
+                @include title-font (30px, white);
+                margin-top: 30px;
+                margin-bottom: 5px;
+            }
+        }
+        .inner__subtitle {
+            p {
+                width: 272px;
+                height: 40px;
+                @include subtitle-font(18px, #F7F3F2);
+                margin-bottom: 15px;
+            }
+        }        
+    }
+    .title {
+        @include title-font (22px, #444444);
+        margin-top: 35px;
+        margin-bottom: 15px;
+        width: 310px;
+        height: auto;    
+        text-align: center;   
+    }
+    .dreamshare__card__body {
+        padding: 15px;
+    }
+    .dreamshare {
+
+        &__card__blok {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 745px;
+        }
+        &__card__mask {
+            background: linear-gradient(360deg, #FF4E50 0%, #F9D423 100%);
+            width: 300px;
+        }
+        // .dreamshare__card
+        &__card {
+            width: 300px;
+            height: 240px; 
+        }
+         
+    }
+    .partners {
+       
+        .partners__block {
+            margin: 0 auto;
+            width: 300px;
+            height: 851px;
+            display:block;
+            align-items: center;
+        }
+        .partners__inner {
+            width: 100%;
+            margin: 15px 0;
+        }
+    }
+    .activity {
+
+        .activity__items {
+            width: 300px;
+            align-items: center;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .item {
+            margin: 10px 0;
+            height: 120px;
+        }
+        #item-6, #item-5, #item-4, #item-3, #item-2  {
+            background-size: cover;
+        }
+        #item-1 {
+        background-position: bottom;
+        }
+        
+    }
+
+    .holiday {
+
+        &__input-button {
+            margin-bottom: 40px;
+        }
+        .input-button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            button {
+                width: 290px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .footer {
+        width: 320px;
+
+        &__body__logo {
+            padding-top: 20px;
+        }
+    }
+    .footer__body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+
+    }
+    .footer__body__content {
+        width: 310px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        &__company {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__partners {
+            margin-top: 15px;
+        }
+    }
+    .company__inner {
+        margin-top: 15px;
+        width: 200px;
+        height: 52px;
+        display: flow-root;
+        margin-bottom: 5px;
+        justify-content: center;
+        align-items: center;
+
+        
+        &__link {
+            padding: 5px;
+
+        }
+    }
+    
+    .partner {
+        &__title {
+            margin-top: 0;
+        }
+    }
+}
+// background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%);

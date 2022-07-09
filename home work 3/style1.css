@@ -1,0 +1,83 @@
+.main {
+    width: auto;
+    height: 800px;
+}
+
+.main div {
+    margin-top: 15px;
+    height: 90px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pointBorder1 {
+    background-color: aqua;
+    border: 1px red;
+    border-style: dashed;
+}
+
+.pointBorder2 {
+    background-color: yellow;
+    border: 0.5px red;
+    border-style: dotted;
+}
+
+.solidBorder1 {
+    background-color: aqua;
+    border: 10px solid blue
+}
+
+.solidBorder2 {
+    background-color: aqua;
+    border-left: 5px solid;
+}
+
+/* float */
+
+.floatTask {
+    margin-top: 30px;
+    width: 1000px;
+    height: 800px;
+    border: 3px solid;
+    margin: 0 auto;
+}
+.menu div {
+    float: left;
+    width: 20%;
+    height: 150px;
+}
+.menu h3 :not(.oneTwoThree) {
+    text-align: center;
+    padding-top: 15%;
+}
+
+.oneTwoThree {
+    width: 100%;
+    height: 400px;
+}
+h3 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.oneBigBlock {
+    background-color: rgb(12, 71, 12);
+    width: 33.334%;
+    float: left;
+    height: 100%;
+    
+}
+.twoBigBlock {
+    background-color: rgb(43, 136, 43);
+    width: 33.334%;
+    float: left;
+    height: 100%;
+}
+.threeBigBlock {
+    
+    width: 33.334%;
+    float: left;
+    height: 100%;
+}

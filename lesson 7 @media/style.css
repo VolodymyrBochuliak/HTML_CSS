@@ -1,0 +1,38 @@
+@import url('./reset.css');
+
+
+/* адаптивна верстка
+
+@media screen and (min-width:992px) and (max-width:1024px) {
+
+    .transitioText, .transitioTextMembers {
+    font-size: 14px;
+}
+} */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(https://w0.peakpx.com/wallpaper/228/757/HD-wallpaper-nature-of-the-music-classic-flames-guitar-sun.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.topHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topHeader p {
+ font-size: 24px;
+ color: white;
+
+}
+.banner {
+    height: 80%;
+}
+
+@media screen and (min-width:991px) and (max-width:1024px){
+
+}

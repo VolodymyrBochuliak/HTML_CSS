@@ -1,0 +1,70 @@
+h1 {
+  color: white; }
+
+body {
+  padding: 150px 0 0 0;
+  background-color: orange; }
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  background-color: white; }
+
+.social-link {
+  background-color: #276283;
+  color: black;
+  width: 150px;
+  height: 235px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.social-link .image-block {
+  background-color: #276283;
+  color: black;
+  width: 150px;
+  height: 235px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+.social-link .block-content {
+  width: 350px;
+  height: 235px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: .5s ease;
+  opacity: 0;
+  padding: 15px;
+  box-sizing: border-box; }
+.social-link .hover-image {
+  right: 0;
+  transition: .5s ease;
+  z-index: -1;
+  background-color: #ad1a1a;
+  color: black;
+  width: 150px;
+  height: 235px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 0;
+  height: 235px; }
+.social-link:hover {
+  width: auto; }
+  .social-link:hover .hover-image {
+    right: 0px;
+    width: 150px;
+    transition: .5s ease;
+    z-index: 1; }
+  .social-link:hover .block-content {
+    position: relative;
+    background: white;
+    opacity: 1;
+    transition: .5s ease; }
+
+/*# sourceMappingURL=style.css.map */

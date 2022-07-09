@@ -1,0 +1,126 @@
+
+$header-color: rgb(2, 136, 189);
+
+.container {
+    // z-index: 100;
+    width: auto;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: $header-color;
+    position: relative;
+
+    .item {
+        display: flex;
+        min-width: 150px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        .preview {
+            display: flex;
+            border: 2px rgba(116, 116, 116, 0.459) solid;
+            width: 150px;
+            height: 100%;
+            img {
+                scale: .5;
+            }
+        }
+
+        .hover-preview {
+            transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transition: .5s ease-in-out, visibility 0.28s;
+            -webkit-transition: .5s ease-in-out, visibility .28s;
+            display: flex;
+            border: 2px rgba(116, 116, 116, 0.459) solid;
+            position: absolute;
+            visibility: hidden;
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            
+        }
+
+        .content {
+            width: 0;
+            overflow: hidden;
+            transition: width .5s ease;
+            background-color: white;
+            position: relative;
+
+            h2 {
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 42px;
+                margin-bottom: 0;
+            }
+            p {
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 21px;
+            }
+        }
+    }
+
+    &:hover {
+
+        .hover-preview {
+            transform: translateX(0);
+            -webkit-transform: translateX(0);
+            visibility: visible;
+            width: 150px;
+            img {
+                scale: .75;
+            }
+        }
+
+        .content {
+            width: 300px;
+            border: 1px solid black;
+        }
+    }
+    #twit {
+        background-color: $header-color;
+    }
+    
+    #face {
+        background-color: rgb(49, 105, 179);
+    }
+    
+    #linked {
+        background-color: rgb(37, 138, 185);
+    }
+    
+    #inst {
+        background-color: rgb(60, 150, 82);
+    }
+    
+    #yout {
+        background-color: rgb(202, 33, 33);
+    }
+    
+    #tumb {
+        background-color: rgb(23, 59, 88);
+    }
+    
+    #drib {
+        background-color: rgb(202, 90, 118);
+    }
+}
+
+
+
+
+
+
+// .item:hover .hover-preview {
+//     transform: translateX(0);
+//     -webkit-transform:translateX(0);
+//     visibility: visible;
+// }
+
+// .item:hover .content {
+//     width: 300px;
+//     border: 1px solid black;
+// }
